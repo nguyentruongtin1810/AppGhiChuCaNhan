@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:paddingTop="32dp"
+    android:paddingHorizontal="16dp"
+    android:paddingBottom="16dp">
+
+    <!-- Ô tìm kiếm ghi chú -->
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tìm theo tiêu đề hoặc nội dung..."
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background" />
+
+    <!-- Nút bấm tạo ghi chú mới -->
+    <Button
+        android:id="@+id/btnOpenAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="+ TẠO GHI CHÚ MỚI" />
+
+    <!-- Danh sách ghi chú -->
+    <ListView
+        android:id="@+id/lvNotes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>
